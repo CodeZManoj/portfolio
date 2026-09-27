@@ -98,54 +98,7 @@ FULL STACK/
 └── README.md           # Project report, rubric documentation & deployment instructions
 ```
 
-### 5. Form Validation Logic
-The contact form uses custom JavaScript validation (bypassing generic browser tooltips via `novalidate` for consistent cross-browser styling):
-- **Name:** Checked for presence, minimum length of 2 characters, and alphabetic formatting.
-- **Email:** Validated against standard RFC email regular expression (`/^[^\s@]+@[^\s@]+\.[^\s@]+$/`).
-- **Subject:** Checked for minimum length of 3 characters.
-- **Message:** Enforces minimum 10 characters and a maximum of 500 characters, backed by live counter UI.
-- **Feedback:** Displays distinct inline error messages, toggles border highlights, and simulates network submission with an asynchronous loading spinner and toast notification.
 
----
-
-## 🌐 Deployment Instructions
-
-You can deploy this static website for free in under 2 minutes using any of the following platforms:
-
-### Option A: Deploy on GitHub Pages (Recommended)
-1. Initialize git and commit your files:
-   ```bash
-   git init
-   git add .
-   git commit -m "feat: Initial commit of Manoj Kumar Full Stack Portfolio"
-   ```
-2. Create a repository on GitHub (e.g., `portfolio-shadowfox` or `manoj-portfolio`).
-3. Push to GitHub:
-   ```bash
-   git remote add origin https://github.com/CodeZManoj/portfolio-shadowfox.git
-   git branch -M main
-   git push -u origin main
-   ```
-4. On GitHub, navigate to **Settings &rarr; Pages**.
-5. Under **Branch**, select `main` and root `/`, then click **Save**.
-6. Your portfolio will be live at: `https://CodeZManoj.github.io/portfolio-shadowfox/`
-
-### Option B: Deploy on Vercel
-1. Install Vercel CLI or visit [vercel.com](https://vercel.com).
-2. If using CLI:
-   ```bash
-   npm i -g vercel
-   vercel
-   ```
-3. Follow the terminal prompts (defaults are automatic for static sites).
-4. Vercel will instantly generate a live URL (e.g., `https://manoj-portfolio.vercel.app`).
-
-### Option C: Deploy on Netlify
-1. Go to [app.netlify.com](https://app.netlify.com).
-2. Log in and drag-and-drop the `FULL STACK` project folder onto Netlify's drop zone.
-3. Netlify will publish it immediately and give you a live production URL.
-
----
 
 ## 📄 License
 This project is open-source and created for educational and evaluation purposes under the [MIT License](LICENSE).
